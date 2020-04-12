@@ -1,7 +1,27 @@
 # quasilinear-sorting
-This repository contains implementations of merge and quick sort. The program outputs information used to compare runtime efficiencies of the quasilinear sorting algorithms. Insertion sort is included for a quadratic sorting algorithm comparison.
+This repository contains implementations of three sorting algorithms: merge, quick, and insertion sort. The program `TestEfficiency` outputs information used to compare the efficiency of these algorithms as measured by wall clock time.
 
-merge sort and quicksort are two sorting algorithms that have a quasilinear--O(n lg n)--running time.
-These algorithms are implemented as functions in respective classes and the main class, `TestEfficiency` tests the timing of the implementations against each other. Insertion sort is also used as a comparison.
+Merge sort and quicksort have a quasilinear O(n lg n) running time. Insertion sort has a quadratic O(n^2) running time and is used as a comparison.
 
-To get started, download the repository and navigate to the working directory. Open a terminal and enter `javac TestEfficiency.java` to compile and `java TestEfficiency` to run the program.
+These algorithms are implemented as functions in their respective classes and the main class, `TestEfficiency`, tests the timing of the implementations against each other.
+
+To run the program on your machine, download the repository and navigate to the working directory. Compile the code with `javac EfficiencyTest.java` and run with `java EfficiencyTest`. 
+
+The program will output information about the sorting algorithms in the following format:
+1. sorting algorithm
+2. runtime
+3. number elements
+4. status
+
+A sample output, shortened for brevity, looks like the following:
+```
+insertionsort	317 ms.		50000	[OK]
+mergesort	15 ms.		50000	[OK]
+quicksort	74 ms.		50000	[OK]
+----------------------------------------------------
+insertionsort	1191 ms.	100000	[OK]
+mergesort	26 ms.		100000	[OK]
+quicksort	27 ms.		100000	[OK]
+----------------------------------------------------
+```
+This information is visualized in the graph efficiency_graph.png, which is made up of runtime data points from my machine.
