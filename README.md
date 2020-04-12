@@ -1,7 +1,7 @@
 # quasilinear-sorting
 This repository contains implementations of three sorting algorithms: merge, quick, and insertion sort. The program `TestEfficiency` outputs information used to compare the efficiency of these algorithms as measured by wall clock time.
 
-Merge sort and quicksort have a quasilinear O(n lg n) running time. Insertion sort has a quadratic O(n^2) running time and is used as a comparison.
+Merge sort and quicksort have a quasilinear O(n lg n) time complexity. Insertion sort has a quadratic O(n^2) time complexity and is used as a comparison.
 
 These algorithms are implemented as functions in their respective classes and the main class, `TestEfficiency`, tests the timing of the implementations against each other.
 
